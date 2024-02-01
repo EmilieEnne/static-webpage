@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRØD</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+      h1 {
+        font-size: 128px;
+        margin: 78px 0px 50px 0px;
+      }
+
+      img {
+        max-width: 700px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 30px 4px 30px 4px;
+      }
+      h2 {
+        font-weight: 300;
+        font-size: 48px;
+        margin: 70px;
+      }
+      p {
+        text-align: left;
+        font-weight: lighter;
+        font-size: 16px;
+        margin: 10px 225px;
+        line-height: 20px;
+      }
+      a {
+        font-weight: lighter;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin: 0 225px 100px;
+        color: #9cb792;
+      }
+
+      button {
+        display: block;
+        background: linear-gradient(#9cb792, #80a773);
+        color: #fff;
+        border: #9cb792;
+        border-radius: 20px 5px 20px 5px;
+        padding: 20px 75px;
+        margin: 100px auto;
+        font-size: 30px;
+        font-weight: bold;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background: #fff;
+        color: #9cb792;
+        border: 1px solid #9cb792;
+        cursor: pointer;
+      }
+
+      .action {
+        font-weight: 300;
+        text-align: center;
+        margin: 70px 0px 100px 0px;
+        font-size: 40px;
+      }
+      .madeBy {
+        margin: 0px auto;
+        text-align: center;
+        font-size: 10px;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>GRØD</strong>
+    </h1>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/087/original/Oatmeal-Porridge-with-Nuts-and-Blueberries-in-a-Blue-Bowl.jpg?1677345200"
+      alt="Bowl of oatmeal porridge with blueberries"
+    />
+    <h2>The smart way to start your day</h2>
+    <p>
+      Porridge is a food made by heating or boiling ground, crushed or chopped
+      starchy plants, typically grain, in milk or water. It is often cooked or
+      served with added flavourings such as sugar, honey, (dried) fruit or syrup
+      to make a sweet cereal, or it can be mixed with spices, meat or vegetables
+      to make a savoury dish. It is usually served hot in a bowl, depending on
+      its consistency. Oat porridge, or oatmeal, is one of the most common types
+      of porridge. Gruel is a thinner version of porridge The term "porridge" is
+      often used specifically for oat porridge (oatmeal), which is typically
+      eaten for breakfast with salt, sugar, fruit, milk, cream or butter and
+      sometimes other flavourings. Oat porridge is also sold in ready-made or
+      partly cooked form as an instant breakfast.[citation needed] Other grains
+      used for porridge include rice, wheat, barley, corn, triticale and
+      buckwheat. Many types of porridge have their own names, such as congee,
+      polenta, grits and kasha.[citation needed]. Porridge is eaten for any meal
+      of the day and porridge is also eaten in many cultures as a common snack
+      and is often eaten by athletes.
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Porridge" target="_blank"
+      >Learn more</a
+    >
+    <div class="action">Get a new <em>GRØD </em> recipe everyday!</div>
+
+    <button>SIGN UP</button>
+    <br />
+    <hr />
+    <span class="madeBy">Coded by Emilie Lykkegaard</span>
+
+    <script>
+      function contactForm() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let language = prompt("what language do you speak?");
+
+        language = language.toLowerCase();
+
+        if (language === "danish") {
+          alert("Tak, " + name + " din opskrift er på vej😊");
+        } else {
+          alert("Thank you, " + name + "! Your recipe is on the way😊");
+        }
+      }
+      let signUp = document.querySelector("button");
+      signUp.addEventListener("click", contactForm);
+    </script>
+  </body>
+</html>
